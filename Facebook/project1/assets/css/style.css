@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 500px;
+  margin: 100px auto 0px;
+}
+
+button {
+  padding: 20px 30px;
+}
+
+.jaka {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.naka {
+  padding: 10px;
+  background-color: red;
+  color: white;
+}
