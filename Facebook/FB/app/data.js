@@ -138,7 +138,7 @@ const post = [
     author: {
       name: "Tahmid Hossain",
       photo:
-        "https://github.com/Tahmid490/Dom/blob/main/Facebook/FB/images/Tahmid.jpg",
+        "https://raw.githubusercontent.com/Tahmid490/Dom/main/Facebook/FB/images/Tahmid.jpg",
     },
   },
 ];
