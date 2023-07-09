@@ -36,18 +36,24 @@ button.addEventListener("dblclick", () => {
   button.previousElementSibling.classList.toggle("jakanaka");
 });
 
-// button.addEventListener("mouseenter", function () {
-//   button.previousElementSibling.classList.toggle("nakajaka");
-// });
+button.addEventListener("mouseenter", function () {
+  button.parentElement.parentElement.classList.add("nakajaka");
+  button.parentElement.parentElement.classList.remove("jakanaka");
+});
+
+button.addEventListener("mouseleave", function () {
+  button.parentElement.parentElement.classList.remove("nakajaka");
+  button.parentElement.parentElement.classList.add("jakanaka");
+});
 
 // button.addEventListener("mouseleave", function () {
 //     button.parentElement.parentElement.style.backgroundColor="pink";
 //   });
 
-button.addEventListener("mousedown", () => {
-    button.parentElement.parentElement.style.backgroundColor="pink"
-});
+// button.addEventListener("mousedown", () => {
+//     button.parentElement.parentElement.style.backgroundColor="pink"
+// });
 
-button.addEventListener("mouseup", () => {
-    button.parentElement.parentElement.style.backgroundColor="red"
-});
+// button.addEventListener("mouseup", () => {
+//     button.parentElement.parentElement.style.backgroundColor="red"
+// });
