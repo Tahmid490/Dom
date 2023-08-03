@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Add an input element of type "file" to allow users to select images -->
+    <input type="file" id="userPhoto" multiple />
+
+    <!-- The container where the gallery will be displayed -->
+    <div class="w-100" id="gallery"></div>
+
+    <script>
+      const userPhoto = document.getElementById("userPhoto");
+      const gallery = document.getElementById("gallery");
+
+      userPhoto.onchange = (e) => {
+        // Clear the gallery container before adding new images
+        gallery.innerHTML = "";
+
+        // Loop through the selected files
+        for (let i = 0; i < e.target.files.length; i++) {
+          const imageUrl = URL.createObjectURL(e.target.files[i]);
+
+          // Create a new image element
+          const imageElement = document.createElement("img");
+
+          // Set the src attribute of the image element to the image URL
+          imageElement.setAttribute("src", imageUrl);
+
+          // You can add additional attributes or styles to the image element if needed
+          // For example: imageElement.setAttribute("class", "gallery-image");
+
+          // Append the image element to the gallery container
+          gallery.appendChild(imageElement);
+        }
+      };
+    </script>
+  </body>
+</html>

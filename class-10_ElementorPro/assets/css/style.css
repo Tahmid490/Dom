@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Asul", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+span {
+  font-size: 40px;
+  color: red;
+}
+
+body {
+  margin: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+h1 {
+  font-size: 30px;
+  color: black;
+  /* background-color: #ff0000;
+  background-color: #3cb371;
+  background-color: #ee82ee; */
+}
+
+li {
+  list-style: none;
+}
+
+/* .drop {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.font_family_style {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.text_Align {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+} */
