@@ -32,7 +32,7 @@ savebtn.onclick = (e) => {
     insertData("todos", todo);
     inputbtn.value = "";
   } else {
-    console.log("Todo can't be empty");
+    alert("Todo can't be empty");
   }
   showTodos();
 };
@@ -43,6 +43,6 @@ function deleteTodos(data) {
 
   let updateTodos = todos.filter((item) => item !== data);
   updateData("todos", updateTodos);
-  
+
   showTodos();
 }
