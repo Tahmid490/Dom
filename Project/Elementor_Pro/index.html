@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row my-5">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="inputText"
+            placeholder="text please"
+          />
+          <br /><br />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="0"
+            id="font_size"
+          />
+
+          <span>0</span>px <br />
+          <br />
+          Color <input type="color" class="font_color" />
+          <br />
+          <br />
+          Background Color <input type="color" class="bg_color" /> <br />
+          <br />
+          Fruits
+          <select class="Fruits">
+            <option value="">--Select--</option>
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Orange">Orange</option>
+          </select>
+          <br />
+          <br />
+          Position
+          <select class="text_Align">
+            <option value="">--Select--</option>
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="center">center</option>
+          </select>
+          <br /><br />
+          Font Family<select class="font_family">
+            <option value="">--Select--</option>
+            <option value="Asul">Asul</option>
+            <option value="Open Sans">Open Sans</option>
+            <option value="Roboto">Roboto</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <h4 class="result">Tahmid Hossain</h4>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app/data.js"></script>
+    <script src="./app/function.js"></script>
+    <script src="./app/main.js"></script>
+  </body>
+</html>
