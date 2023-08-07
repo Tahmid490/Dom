@@ -19,56 +19,60 @@
   </head>
   <body>
     <div class="container my-5">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center my-5">
         <div class="col-md-8">
-          <div class="card">
+          <div class="card shadow">
             <div class="card-header">
-              <h2 class="card-title">Create Account</h2>
+              <h1 class="card-title" style="color: rgb(203, 21, 21)">
+                Create Account
+              </h1>
             </div>
+            <div id="msg"></div>
             <div class="card-body">
-              <div class="msg"></div>
               <form id="userForm">
                 <div class="my-3">
-                  <label for="">Name</label>
+                  <label for="" style="color: rgb(37, 161, 165)">Name</label>
                   <input type="text" class="form-control" name="name" />
                 </div>
                 <div class="my-3">
-                  <label for="">Email</label>
+                  <label for="" style="color: rgb(90, 0, 180)">Email</label>
                   <input type="text" class="form-control" name="email" />
                 </div>
                 <div class="my-3">
-                  <label for="">Mobile</label>
+                  <label for="" style="color: rgb(171, 8, 130)">Mobile</label>
                   <input type="text" class="form-control" name="mobile" />
                 </div>
                 <div class="my-3">
+                  <label for="" style="color: rgb(246, 119, 0)">File</label>
                   <input
                     type="file"
-                    class="form-control"
                     id="userPhoto"
+                    class="form-control"
                     name="photo"
                   />
-                <div class="my-3"></div>
-                  <img class="w-100" id="userPhotoPreview" src="" alt="" />
-               
+                  <img id="userphotoPrev" class="w-100" src="" alt="" />
+                </div>
 
                 <div class="my-3">
-                gallery <input
+                  <label for="" style="color: red">Gallery</label>
+                  <input
                     type="file"
+                    id="galPhoto"
                     multiple
                     class="form-control"
-                    id="galleryPhoto"
-                    name="galleryPhoto"
+                    name="photo"
                   />
-                  <div class="galimg ">  
-                    
-                  </div>
                 </div>
-               
-                
 
                 <div class="my-3">
-                  <button class="btn btn-primary">Create</button>
-                  <button class="btn btn-warning">Reset</button>
+                  <div class="row">
+                    <div id="img_box"></div>
+                  </div>
+                </div>
+
+                <div class="my-3">
+                  <button type="submit" class="btn btn-primary">Create</button>
+                  <button type="reset" class="btn btn-warning">Reset</button>
                 </div>
               </form>
             </div>
